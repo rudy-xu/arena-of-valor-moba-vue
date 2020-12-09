@@ -37,7 +37,7 @@ export default {
         await this.$http.put(`rest/categories/${this.id}`, this.model);
       } else {
         //const res = await this.$http.post("categories", this.model);
-        await this.$http.post("categories", this.model);
+        await this.$http.post("rest/categories", this.model);
       }
       this.$router.push("/categories/list");
       this.$message({
