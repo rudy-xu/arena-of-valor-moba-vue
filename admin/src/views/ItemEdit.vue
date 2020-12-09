@@ -1,7 +1,7 @@
 <template>
   <div class="ItemEdit">
     <h1>{{ id ? "编辑" : "新建" }}物品</h1>
-    <el-form label-width="120px" style="background: red" @submit.native.prevent="save">
+    <el-form label-width="120px" @submit.native.prevent="save">
       <el-form-item label="名称">
         <el-input v-model="model.name"></el-input>
       </el-form-item>
@@ -62,10 +62,6 @@ export default {
     async fetch() {
       const res = await this.$http.get(`rest/items/${this.id}`);
       this.model = res.data;
-    },
-    async fetchParents() {
-        const res = await this.$http.get("rest/items");
-        this.parents = res.data;
     }
   },
   created() {
