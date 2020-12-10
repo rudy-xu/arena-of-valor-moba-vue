@@ -2,6 +2,7 @@ const express = require("express");
 
 const app = express();
 
+app.set("secret", "asda4545jiojiosda342..");   //this string should in config file, shouldn't be in code
 
 app.use(require("cors")());
 app.use(express.json());
