@@ -1,0 +1,67 @@
+//Define colors
+$colors: (
+    "primary": #db9e3f,
+    "slideIcon": #4b67af,
+    "white": #fff,    //the key of color is same as the color name, so need to add ""
+    "light": #f9f9f9,
+    "lightborder": #d4d9de,
+    "grey": #999,
+    "grey-dark": #666,
+    "lightdark": #343440,
+    "dark": #222,
+    "black": #000
+);
+
+//color variable
+$border-color: map-get($colors, "lightborder");
+
+//font size
+$base-font-size: 1rem;
+$font-sizes: (
+    xxs: .615385, //8px
+    xs: .769231, //10px
+    sm: .923077, //12px
+    md: 1,   //13px
+    lg: 1.076923, //14px
+    xl: 1.230769,  //16px
+);
+
+//flex -> Principal axis and cross axis, not just horizontal and vertical
+$flex-jc: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+);
+
+$flex-ai: (
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+);
+
+//spacing
+$base-spacing-size: 1rem;
+
+$spacing-types: (
+    m: margin,
+    p: padding
+);
+
+$spacing-directions: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left
+);
+
+$spacing-sizes: (
+    0: 0,
+    1: 0.25,
+    2: 0.5,
+    3: 1,
+    4: 1.5,
+    5: 3
+);

@@ -63,7 +63,7 @@ module.exports = app => {
         {
             queryOptions.populate = 'parent'
         }
-        const items = await req.Model.find().setOptions(queryOptions).limit(10);
+        const items = await req.Model.find().setOptions(queryOptions).limit(100);
         res.send(items);
     });
 
