@@ -11,7 +11,6 @@ module.exports = app => {
     });
 
 
-
     /**
      * Hard to be universal
      * We should consider whether we need a common interface
@@ -63,7 +62,7 @@ module.exports = app => {
         {
             queryOptions.populate = 'parent'
         }
-        const items = await req.Model.find().setOptions(queryOptions).limit(100);
+        const items = await req.Model.find().setOptions(queryOptions);
         res.send(items);
     });
 

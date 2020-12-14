@@ -23,6 +23,10 @@ require("./plugins/mongo")(app);
 require("./router/admin")(app);
 
 
+//web router
+require("./router/web")(app);
+
+
 app.listen(3000, () => {
     console.log("http://localhost:3000");
 });
