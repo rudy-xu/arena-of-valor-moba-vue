@@ -31,21 +31,45 @@
 
     <m-list-card icon="cc-menu-circle" title="新闻资讯" :categories="newsCategories">
       <template #items="{categorySlotProps}">
-        <div class="py-2 d-flex" v-for="(news, index) in categorySlotProps.newsList" :key="index">
-          <span class="px-1 spLabel">{{news.categoryName}}</span>
-          <span class="flex-grow-1">{{news.title}}</span>
-          <span>{{news.date}}</span>
+        <router-link 
+        tag="div"
+        :to="`/articles/${news._id}`" 
+        class="py-2 d-flex fs-lg" 
+        v-for="(news, index) in categorySlotProps.newsList" :key="index">
+          <span class="pr-1 mr-2 spLabel text-primary">{{news.categoryName}}</span>
+          <span class="pr-2 flex-grow-1 text-dark text-ellipsis">{{news.title}}</span>
+          <span class="text-grey-dark fs-sm">{{news.createdAt | date}}</span>
+        </router-link>
+      </template>
+    </m-list-card>
+
+    <m-list-card icon="card-hero" title="英雄列表" :categories="heroCategories">
+      <template #items="{categorySlotProps}">
+        <div class="d-flex flex-wrap" style="margin: 0 -0.5rem;">
+          <router-link 
+          tag="div"
+          :to="`/heroes/${hero._id}`"
+          class="p-2 text-center" style="width: 20%;" v-for="(hero, index) in categorySlotProps.heroList" :key="index">
+            <img :src="hero.avatar" alt="" class="w-100"/>
+            <div>{{hero.name}}</div>
+          </router-link>
         </div>
       </template>
     </m-list-card>
-    
   </div>
 </template>
 
 
 
 <script>
+import dayjs from "dayjs";
+
   export default {
+    filters: {
+      date(val) {
+        return dayjs(val).format("MM/DD");
+      }
+    },
     data() {
       return {
         spriteItems: [{
@@ -84,51 +108,26 @@
             el: '.pagination-home'
           }
         },
-        newsCategories: [
-          {
-            name: "热门",
-            newsList: new Array(5).fill(1).map(() => ({
-              categoryName: "热门",
-              title: "《目标》·新英雄澜CG",
-              date: "12/08"
-            }))
-          },
-          {
-            name: "新闻",
-            newsList: new Array(5).fill(1).map(() => ({
-              categoryName: "新闻",
-              title: "《目标》·新英雄澜CG",
-              date: "12/08"
-            }))
-          },
-          {
-            name: "公告",
-            newsList: new Array(5).fill(1).map(() => ({
-              categoryName: "公告",
-              title: "12月12日体验服停机更新公告",
-              date: "12/12"
-            }))
-          },
-          {
-            name: "活动",
-            newsList: new Array(5).fill(1).map(() => ({
-              categoryName: "活动",
-              title: "新英雄澜登场，冬日聚峡谷对战赢好礼",
-              date: "12/07"
-            }))
-          },
-          {
-            name: "赛事",
-            newsList: new Array(5).fill(1).map(() => ({
-              categoryName: "赛事",
-              title: "《目标》·新英雄澜CG",
-              date: "12/08"
-            }))
-          }
-        ]
+        newsCategories: [],
+        heroCategories: []
       }
+    },
+    methods:{
+      async fetchNewsCategories() {
+        const res = await this.$http.get("news/list");
+        this.newsCategories = res.data;
+      },
+      async fetchHeroCategories() {
+        const res = await this.$http.get("heroes/list");
+        this.heroCategories = res.data;
+      }
+    },
+    created() {
+      this.fetchNewsCategories();
+      this.fetchHeroCategories();
     }
-  }
+
+  };
 </script>
 
 

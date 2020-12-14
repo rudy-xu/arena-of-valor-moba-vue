@@ -23,6 +23,18 @@ a {
     color: #999;
 }
 
+p {
+    line-height: 1.5rem;
+}
+
+//text overflow
+.text-ellipsis {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    width: 1.2rem;
+}
 
 //width, height
 .w-100 {
@@ -214,5 +226,12 @@ a {
         width: .769231rem;
         height: .769231rem;
         background-position: 38.577% 52.076%;
+    }
+}
+
+//borders
+@each $dir in (top, right, bottom, left) {
+    .border-#{$dir} {
+        border-#{$dir}: 1px solid $border-color
     }
 }

@@ -2,11 +2,14 @@
 $colors: (
     "primary": #db9e3f,
     "slideIcon": #4b67af,
+    "blue": #4394e4,
     "white": #fff,    //the key of color is same as the color name, so need to add ""
     "light": #f9f9f9,
     "lightborder": #d4d9de,
+    "grey-light": #b6afa8,
     "grey": #999,
     "grey-dark": #666,
+    "danger": #791a15,
     "lightdark": #343440,
     "dark": #222,
     "black": #000
@@ -24,6 +27,7 @@ $font-sizes: (
     md: 1,   //13px
     lg: 1.076923, //14px
     xl: 1.230769,  //16px
+    xxl: 1.307692 //17px
 );
 
 //flex -> Principal axis and cross axis, not just horizontal and vertical
