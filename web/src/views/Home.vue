@@ -64,70 +64,70 @@
 <script>
 import dayjs from "dayjs";
 
-  export default {
-    filters: {
-      date(val) {
-        return dayjs(val).format("MM/DD");
-      }
-    },
-    data() {
-      return {
-        spriteItems: [{
-          name: "news",
-          text: "爆料站"
-        },{
-          name: "story",
-          text: "故事站"
-        },{
-          name: "store",
-          text: "周边商场"
-        },{
-          name: "experience",
-          text: "体验服"
-        },{
-          name: "newer",
-          text: "新人专区"
-        },{
-          name: "glory",
-          text: "荣耀·传承"
-        },{
-          name: "king",
-          text: "王者营地"
-        },{
-          name: "commonNum",
-          text: "公告号"
-        },{
-          name: "version",
-          text: "版本介绍"
-        },{
-          name: "battle",
-          text: "对局环境"
-        }],
-        swiperOption: {
-          pagination: {
-            el: '.pagination-home'
-          }
-        },
-        newsCategories: [],
-        heroCategories: []
-      }
-    },
-    methods:{
-      async fetchNewsCategories() {
-        const res = await this.$http.get("news/list");
-        this.newsCategories = res.data;
-      },
-      async fetchHeroCategories() {
-        const res = await this.$http.get("heroes/list");
-        this.heroCategories = res.data;
-      }
-    },
-    created() {
-      this.fetchNewsCategories();
-      this.fetchHeroCategories();
+export default {
+  filters: {
+    date(val) {
+      return dayjs(val).format("MM/DD");
     }
+  },
+  data() {
+    return {
+      spriteItems: [{
+        name: "news",
+        text: "爆料站"
+      },{
+        name: "story",
+        text: "故事站"
+      },{
+        name: "store",
+        text: "周边商场"
+      },{
+        name: "experience",
+        text: "体验服"
+      },{
+        name: "newer",
+        text: "新人专区"
+      },{
+        name: "glory",
+        text: "荣耀·传承"
+      },{
+        name: "king",
+        text: "王者营地"
+      },{
+        name: "commonNum",
+        text: "公告号"
+      },{
+        name: "version",
+        text: "版本介绍"
+      },{
+        name: "battle",
+        text: "对局环境"
+      }],
+      swiperOption: {
+        pagination: {
+          el: '.pagination-home'
+        }
+      },
+      newsCategories: [],
+      heroCategories: []
+    }
+  },
+  methods:{
+    async fetchNewsCategories() {
+      const res = await this.$http.get("news/list");
+      this.newsCategories = res.data;
+    },
+    async fetchHeroCategories() {
+      const res = await this.$http.get("heroes/list");
+      this.heroCategories = res.data;
+    }
+  },
+  created() {
+    this.fetchNewsCategories();
+    this.fetchHeroCategories();
+  }
 
-  };
+};
 </script>
 
 

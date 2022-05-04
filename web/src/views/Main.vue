@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="topbar bg-black py-2 px-3 d-flex ai-center">
-      <img src="../assets/images/logo.png" alt="" height="30"/>
+      <img src="../assets/images/logo.jpg" alt="" height="30"/>
       <div class="py-1 px-3 flex-grow-1">
         <div class="text-white">王者荣耀</div>
         <div class="text-grey-dark fs-xxs">团队成就更多</div>

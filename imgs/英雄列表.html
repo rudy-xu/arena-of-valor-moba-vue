@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)https://pvp.qq.com/m/m201706/heroList.shtml -->
+<html style="font-size: 50px;"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    
+    <meta name="applicable-device" content="mobile">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="robots" content="all">
+    <meta name="author" content="Tencent-TGideas">
+    <meta name="Copyright" content="Copyright (c) 2006-2015 TENCENT">
+    <meta name="keywords" content="王者荣耀英雄,王者荣耀英雄介绍,王者荣耀英雄大全,王者荣耀英雄资料">
+    <meta name="description" content="王者荣耀英雄介绍,全部英雄大全,英雄属性，英雄图片,英雄技能定位，英雄故事，英雄图文视频攻略，助您荣登最强王者宝座!">
+    <meta name="applicable-device" content="mobile">
+    <link rel="alternate" href="https://pvp.qq.com/web201605/herolist.shtml">
+    <title>英雄列表-王者荣耀官网-腾讯游戏</title>
+    <script>
+        function samResize() {
+            var docEl = document.documentElement;
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) {
+                return
+            }
+            docEl.style.fontSize = 100 * (clientWidth / 750) + "px"
+        }
+        samResize();
+    </script>
+</head>
+
+<body style="margin-top: 0px;">
+    <script>
+    function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var params = query.split("&");
+        var pLength = params.length
+        for (var i=0;i<pLength;i++) {
+        var pair = params[i].split("=");
+        if(pair[0] === variable){return pair[1];}
+        }
+        return(false);
+    }
+    // 是否内嵌于王者营地
+    function isWZYD() {
+        var ua = window.navigator.userAgent.toLowerCase();
+        if (/gamehelper/i.test(ua)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    if(getQueryVariable('adtag')==='media' || isWZYD()) {
+        document.body.className += ' show-more-top';
+    }
+    </script>
+    <div class="home-top" style="display: none;">
+        <div class="home-top1">
+            <div class="logo_cont">
+                <a class="logo_img" href="https://pvp.qq.com/m/index.shtml">
+                </a>
+                <div class="logo_title">
+                    <h1>王者荣耀</h1>
+                    <p>团队成就更多</p>
+                </div>
+            </div>
+            <div class="download">
+                <a class="mct_download_btn" href="https://pvp.qq.com/zlkdatasys/mct/d/play.shtml" onclick="PTTSendClick(&#39;mainnav&#39;,&#39;download&#39;,&#39;下载游戏&#39;);">
+                </a>
+            </div>
+        </div>
+        <div class="home-top2">
+            <p>版本号：3.72.1.1</p>
+            <p>更新时间：2022-01-06</p>
+            <p>开发者：Tencent mobile Games</p>
+            <div class="home-top2__links">
+                <p>应用涉及权限：<a href="https://pvp.qq.com/m/m201706/news.html?tid=516913">查看详情&gt;&gt;</a></p>
+                <p>App隐私权限：<a href="https://game.qq.com/privacy_guide.shtml">查看详情&gt;&gt;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="home_bottom" id="main-nav" style="position: initial; display: none;">
+    <ul class="clearfix">
+        <li class="">
+            <a href="https://pvp.qq.com/m/m201706/index.shtml" onclick="PTTSendClick(&#39;headNav&#39;,&#39;home&#39;,&#39;首页&#39;);">首页</a>
+        </li>            
+        <!-- <li>
+            <a href="//pvp.qq.com/m/m201606/video.shtml" onclick="PTTSendClick('headNav','video','视频');">
+                视频
+            </a>
+        </li> -->
+        <li>
+            <a href="https://pvp.qq.com/m/m201706/strategycenter.shtml" onclick="PTTSendClick(&#39;headNav&#39;,&#39;strategy&#39;,&#39;攻略中心&#39;);">
+                攻略中心
+            </a>
+        </li>
+        <li>
+            <a href="https://pvp.qq.com/m/m201706/matchindex.shtml" onclick="PTTSendClick(&#39;headNav&#39;,&#39;match&#39;,&#39;赛事中心&#39;);">
+                赛事中心
+            </a>
+        </li>
+        <li>
+            <a href="https://pvp.qq.com/m/m201706/ipgame.html" onclick="PTTSendClick(&#39;headNav&#39;,&#39;ipgame&#39;,&#39;IP新游&#39;);">
+                IP新游
+            </a>
+        </li>
+    </ul>
+</div>
+    <div id="tgax-wrap" class="wrap">
+        <script>
+            var speed_start = new Date(),
+                speed_load = null,
+                speed_all_load = null;
+        </script>
+        <link rel="stylesheet" href="./英雄列表-王者荣耀官网-腾讯游戏_files/base.css">
+        <link rel="stylesheet" href="./英雄列表-王者荣耀官网-腾讯游戏_files/herolist.css">
+        <!-- <link rel="stylesheet" href="ossweb-img/css/herolist.css"> -->
+        <div class="container">
+            <div id="" class="hero-nav">
+                <ul>
+                    <li class="hero-current" data-type="0">
+                        <a href="javascript:;">全部</a>
+                    </li>
+                    <li data-type="1">
+                        <a href="javascript:;">战士</a>
+                    </li>
+                    <li data-type="2">
+                        <a href="javascript:;">法师</a>
+                    </li>
+                    <li data-type="3">
+                        <a href="javascript:;">坦克</a>
+                    </li>
+                    <li data-type="4">
+                        <a href="javascript:;">刺客</a>
+                    </li>
+                    <li data-type="5">
+                        <a href="javascript:;">射手</a>
+                    </li>
+                    <li data-type="6">
+                        <a href="javascript:;">辅助</a>
+                    </li>
+                </ul>
+                <div class="clearfloat"></div>
+            </div>
+            <!--英雄列表-->
+            <div class="hero-list">
+                <ul class="herolist clearfix"><li><a href="https://pvp.qq.com/web201605/herodetail/m/105.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/105.jpg" width="91px" alt="廉颇"></div><h3>廉颇</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/106.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/106.jpg" width="91px" alt="小乔"></div><h3>小乔</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/107.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/107.jpg" width="91px" alt="赵云"></div><h3>赵云</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/108.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/108.jpg" width="91px" alt="墨子"></div><h3>墨子</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/109.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/109.jpg" width="91px" alt="妲己"></div><h3>妲己</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/110.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/110.jpg" width="91px" alt="嬴政"></div><h3>嬴政</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/111.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/111.jpg" width="91px" alt="孙尚香"></div><h3>孙尚香</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/112.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/112.jpg" width="91px" alt="鲁班七号"></div><h3>鲁班七号</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/113.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/113.jpg" width="91px" alt="庄周"></div><h3>庄周</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/114.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/114.jpg" width="91px" alt="刘禅"></div><h3>刘禅</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/115.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/115.jpg" width="91px" alt="高渐离"></div><h3>高渐离</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/116.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/116.jpg" width="91px" alt="阿轲"></div><h3>阿轲</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/117.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/117.jpg" width="91px" alt="钟无艳"></div><h3>钟无艳</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/118.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/118.jpg" width="91px" alt="孙膑"></div><h3>孙膑</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/119.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/119.jpg" width="91px" alt="扁鹊"></div><h3>扁鹊</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/120.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/120.jpg" width="91px" alt="白起"></div><h3>白起</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/121.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/121.jpg" width="91px" alt="芈月"></div><h3>芈月</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/123.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/123.jpg" width="91px" alt="吕布"></div><h3>吕布</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/124.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/124.jpg" width="91px" alt="周瑜"></div><h3>周瑜</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/126.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/126.jpg" width="91px" alt="夏侯惇"></div><h3>夏侯惇</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/127.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/127.jpg" width="91px" alt="甄姬"></div><h3>甄姬</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/128.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/128.jpg" width="91px" alt="曹操"></div><h3>曹操</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/129.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/129.jpg" width="91px" alt="典韦"></div><h3>典韦</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/130.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/130.jpg" width="91px" alt="宫本武藏"></div><h3>宫本武藏</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/131.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/131.jpg" width="91px" alt="李白"></div><h3>李白</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/132.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/132.jpg" width="91px" alt="马可波罗"></div><h3>马可波罗</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/133.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/133.jpg" width="91px" alt="狄仁杰"></div><h3>狄仁杰</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/134.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/134.jpg" width="91px" alt="达摩"></div><h3>达摩</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/135.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/135.jpg" width="91px" alt="项羽"></div><h3>项羽</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/136.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/136.jpg" width="91px" alt="武则天"></div><h3>武则天</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/139.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/139.jpg" width="91px" alt="老夫子"></div><h3>老夫子</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/140.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/140.jpg" width="91px" alt="关羽"></div><h3>关羽</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/141.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/141.jpg" width="91px" alt="貂蝉"></div><h3>貂蝉</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/142.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/142.jpg" width="91px" alt="安琪拉"></div><h3>安琪拉</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/144.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/144.jpg" width="91px" alt="程咬金"></div><h3>程咬金</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/146.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/146.jpg" width="91px" alt="露娜"></div><h3>露娜</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/148.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/148.jpg" width="91px" alt="姜子牙"></div><h3>姜子牙</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/149.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/149.jpg" width="91px" alt="刘邦"></div><h3>刘邦</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/150.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/150.jpg" width="91px" alt="韩信"></div><h3>韩信</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/152.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/152.jpg" width="91px" alt="王昭君"></div><h3>王昭君</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/153.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/153.jpg" width="91px" alt="兰陵王"></div><h3>兰陵王</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/154.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/154.jpg" width="91px" alt="花木兰"></div><h3>花木兰</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/156.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/156.jpg" width="91px" alt="张良"></div><h3>张良</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/157.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/157.jpg" width="91px" alt="不知火舞"></div><h3>不知火舞</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/162.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/162.jpg" width="91px" alt="娜可露露"></div><h3>娜可露露</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/163.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/163.jpg" width="91px" alt="橘右京"></div><h3>橘右京</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/166.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/166.jpg" width="91px" alt="亚瑟"></div><h3>亚瑟</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/167.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/167.jpg" width="91px" alt="孙悟空"></div><h3>孙悟空</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/168.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/168.jpg" width="91px" alt="牛魔"></div><h3>牛魔</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/169.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/169.jpg" width="91px" alt="后羿"></div><h3>后羿</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/170.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/170.jpg" width="91px" alt="刘备"></div><h3>刘备</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/171.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/171.jpg" width="91px" alt="张飞"></div><h3>张飞</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/173.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/173.jpg" width="91px" alt="李元芳"></div><h3>李元芳</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/174.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/174.jpg" width="91px" alt="虞姬"></div><h3>虞姬</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/175.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/175.jpg" width="91px" alt="钟馗"></div><h3>钟馗</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/177.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/177.jpg" width="91px" alt="成吉思汗"></div><h3>成吉思汗</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/178.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/178.jpg" width="91px" alt="杨戬"></div><h3>杨戬</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/183.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/183.jpg" width="91px" alt="雅典娜"></div><h3>雅典娜</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/184.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/184.jpg" width="91px" alt="蔡文姬"></div><h3>蔡文姬</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/186.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/186.jpg" width="91px" alt="太乙真人"></div><h3>太乙真人</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/180.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/180.jpg" width="91px" alt="哪吒"></div><h3>哪吒</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/190.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/190.jpg" width="91px" alt="诸葛亮"></div><h3>诸葛亮</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/192.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/192.jpg" width="91px" alt="黄忠"></div><h3>黄忠</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/191.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/191.jpg" width="91px" alt="大乔"></div><h3>大乔</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/187.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/187.jpg" width="91px" alt="东皇太一"></div><h3>东皇太一</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/182.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/182.jpg" width="91px" alt="干将莫邪"></div><h3>干将莫邪</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/189.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/189.jpg" width="91px" alt="鬼谷子"></div><h3>鬼谷子</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/193.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/193.jpg" width="91px" alt="铠"></div><h3>铠</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/196.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/196.jpg" width="91px" alt="百里守约"></div><h3>百里守约</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/195.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/195.jpg" width="91px" alt="百里玄策"></div><h3>百里玄策</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/194.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/194.jpg" width="91px" alt="苏烈"></div><h3>苏烈</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/198.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/198.jpg" width="91px" alt="梦奇"></div><h3>梦奇</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/179.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/179.jpg" width="91px" alt="女娲"></div><h3>女娲</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/501.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/501.jpg" width="91px" alt="明世隐"></div><h3>明世隐</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/199.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/199.jpg" width="91px" alt="公孙离"></div><h3>公孙离</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/176.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/176.jpg" width="91px" alt="杨玉环"></div><h3>杨玉环</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/502.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/502.jpg" width="91px" alt="裴擒虎"></div><h3>裴擒虎</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/197.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/197.jpg" width="91px" alt="弈星"></div><h3>弈星</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/503.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/503.jpg" width="91px" alt="狂铁"></div><h3>狂铁</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/504.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/504.jpg" width="91px" alt="米莱狄"></div><h3>米莱狄</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/125.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/125.jpg" width="91px" alt="元歌"></div><h3>元歌</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/510.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/510.jpg" width="91px" alt="孙策"></div><h3>孙策</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/137.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/137.jpg" width="91px" alt="司马懿"></div><h3>司马懿</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/509.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/509.jpg" width="91px" alt="盾山"></div><h3>盾山</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/508.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/508.jpg" width="91px" alt="伽罗"></div><h3>伽罗</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/312.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/312.jpg" width="91px" alt="沈梦溪"></div><h3>沈梦溪</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/507.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/507.jpg" width="91px" alt="李信"></div><h3>李信</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/513.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/513.jpg" width="91px" alt="上官婉儿"></div><h3>上官婉儿</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/515.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/515.jpg" width="91px" alt="嫦娥"></div><h3>嫦娥</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/511.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/511.jpg" width="91px" alt="猪八戒"></div><h3>猪八戒</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/529.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/529.jpg" width="91px" alt="盘古"></div><h3>盘古</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/505.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/505.jpg" width="91px" alt="瑶"></div><h3>瑶</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/506.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/506.jpg" width="91px" alt="云中君"></div><h3>云中君</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/522.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/522.jpg" width="91px" alt="曜"></div><h3>曜</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/518.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/518.jpg" width="91px" alt="马超"></div><h3>马超</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/523.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/523.jpg" width="91px" alt="西施"></div><h3>西施</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/525.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/525.jpg" width="91px" alt="鲁班大师"></div><h3>鲁班大师</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/524.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/524.jpg" width="91px" alt="蒙犽"></div><h3>蒙犽</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/531.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/531.jpg" width="91px" alt="镜"></div><h3>镜</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/527.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/527.jpg" width="91px" alt="蒙恬"></div><h3>蒙恬</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/533.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/533.jpg" width="91px" alt="阿古朵"></div><h3>阿古朵</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/536.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/536.jpg" width="91px" alt="夏洛特"></div><h3>夏洛特</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/528.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/528.jpg" width="91px" alt="澜"></div><h3>澜</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/537.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/537.jpg" width="91px" alt="司空震"></div><h3>司空震</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/155.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/155.jpg" width="91px" alt="艾琳"></div><h3>艾琳</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/538.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/538.jpg" width="91px" alt="云缨"></div><h3>云缨</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/540.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/540.jpg" width="91px" alt="金蝉"></div><h3>金蝉</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/542.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/542.jpg" width="91px" alt="暃"></div><h3>暃</h3></a></li><li><a href="https://pvp.qq.com/web201605/herodetail/m/534.html"><div class="hero-img"><img src="./英雄列表-王者荣耀官网-腾讯游戏_files/534.jpg" width="91px" alt="桑启"></div><h3>桑启</h3></a></li></ul>
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+
+        <div class="mask" id="mask">
+            <div class="mask-box">
+                <div class="mask-pic">
+                    <i></i>
+                </div>
+                <p>
+                    <em>!</em>
+                    <span>为了更好的体验，请将手机/平板竖过来</span>
+                </p>
+            </div>
+        </div>
+        <!-- 不知道为什么这里多了一个script，应该是历史遗留问题，看起来没什么用，先注释掉 -->
+        <!-- <script>
+            var setSite = {
+                siteType: "os",
+                pageType: "heroList",
+                pageName: "英雄列表",
+                project: "base",
+                osact: "m"
+            };
+
+            if (typeof $ != 'undefined') {
+                $('#tgax-wrap').on('pjax:complete', function () {
+                    speed_load = new Date();
+                    window.tgaxSpeed([21854, 1, 2, 3]);
+                });
+
+                var dataList = new Array();
+                (function () {
+                    $.ajax({
+                        type: "get",
+                        // url: "ossweb-img/js/herolist.json",
+                        url: "//pvp.qq.com/web201605/js/herolist.json",
+                        dataType: "json",
+                        contentType: "application/json; charset=utf-8",
+                        success: function (data) {
+                            $.each(data, function (i, n) {
+                                dataList.push(n);
+                            });
+                            init(data);
+                        },
+                        error: function (err) {
+                            // alert(err)
+                        }
+                    });
+                })();
+
+                var setall = $('body').find('.hero-nav li'),
+
+                    faceInit = function (data) {
+                        var heroContent = $('.herolist');
+                        var html = '';
+                        $.each(data, function () {
+                            var imgurl = '//game.gtimg.cn/images/yxzj/img201606/heroimg/' + this.ename + '/';
+                            html += '<li><a href="//pvp.qq.com/web201605/herodetail/m/' + this.ename +
+                                '.html"><div class="hero-img"><img src="' + imgurl + this.ename +
+                                '.jpg" width="91px" alt="' + this.cname + '"></div><h3>' + this.cname +
+                                '</h3></a></li>';
+
+                        })
+                        heroContent.html(html);
+                    },
+                    init = function (data) {
+                        var totalValidatData = [];
+                        var curPage = 0;
+                        var getValidateData = function (type) {
+                            if (!type || type == 0) {
+                                return data;
+                            }
+                            var arr = [];
+                            $.each(data, function () {
+                                if (this.hero_type == type) {
+                                    arr.push(this);
+                                }
+                            })
+                            return arr;
+                        }
+                        faceInit(getValidateData());
+
+
+                        //导航事件绑定
+                        $('body').on('click', '.hero-nav li', function () {
+                            var type = $(this).data('type');
+                            setall.removeClass('hero-current');
+                            $(this).addClass('hero-current');
+                            faceInit(getValidateData(type));
+                        });
+
+                    },
+                    LoadItem = function (ItemValue) {
+                        var html = [];
+                        for (j = 0; j < dataList.length; j++) {
+                            var ItemName = dataList[j].cname;
+                            if (ItemName.indexOf(ItemValue) != "-1") {
+                                var num = j + 1;
+                                var imgurl = '//game.gtimg.cn/images/yxzj/img201606/heroimg/' + dataList[j].ename + '/';
+                                html.push('<li><a href="//pvp.qq.com/web201605/herodetail/m/' + dataList[j].ename +
+                                    '.html"><img src="' + imgurl + dataList[j].ename + '.jpg" width="91px" alt="' +
+                                    dataList[j].cname + '"><h3>' + dataList[j].cname + '</h3></a></li>');
+                            }
+                        }
+                        if (html.length == 0) {
+                            $(".herolist").html(" ");
+                            //$("#JErroTips").show();
+                            return;
+                        }
+                        $(".herolist").html(html.join(""));
+                    },
+                    checkInput = function (inptid) {
+                        var inpt = document.getElementById(inptid),
+                            valu = inpt.value;
+                        inpt.onblur = function () {
+                            if (this.value == "") this.value = valu;
+                        };
+                        inpt.onfocus = function () {
+                            if (this.value == valu) this.value = "";
+                        }
+                    };
+            }
+        </script> -->
+    </div>
+    <script src="./英雄列表-王者荣耀官网-腾讯游戏_files/zepto.min.js"></script>
+    <script src="./英雄列表-王者荣耀官网-腾讯游戏_files/ping_tcss_tgideas_https_min.js"></script>
+    <script src="./英雄列表-王者荣耀官网-腾讯游戏_files/commonpjax.js"></script>
+    <script type="text/javascript">
+        if (typeof (pgvMain) == 'function') pgvMain();
+
+        var setSite = {
+                siteType: "os",
+                pageType: "heroList",
+                pageName: "英雄列表",
+                project: "base",
+                osact: "m"
+            };
+
+        window.onload = function () {
+            speed_all_load = new Date();
+            window.reportSpeed([21854, 1, 2, 3]);
+        }
+
+        var dataList = new Array();
+        (function () {
+            var lastPage = document.referrer;
+            var hideNav = lastPage.indexOf('herodetail') > -1 || lastPage.indexOf('heropic-detail') > -1;
+
+            if (hideNav) {
+                $('.home-top').hide();
+                $('.home_bottom').hide();
+                $('body').css('margin-top', 0);
+            }
+            $.ajax({
+                type: "get",
+                // url: "ossweb-img/js/herolist.json",
+                url: "//pvp.qq.com/web201605/js/herolist.json",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                success: function (data) {
+                    $.each(data, function (i, n) {
+                        dataList.push(n);
+                    });
+                    init(data);
+                },
+                error: function (err) {
+                    // alert(err)
+                }
+            });
+        })();
+
+        var setall = $('body').find('.hero-nav li'),
+
+            faceInit = function (data) {
+                var heroContent = $('.herolist');
+                var html = '';
+                $.each(data, function () {
+                    var imgurl = '//game.gtimg.cn/images/yxzj/img201606/heroimg/' + this.ename + '/';
+                    html += '<li><a href="//pvp.qq.com/web201605/herodetail/m/' + this.ename +
+                        '.html"><div class="hero-img"><img src="' + imgurl + this.ename +
+                        '.jpg" width="91px" alt="' + this.cname + '"></div><h3>' + this.cname +
+                        '</h3></a></li>';
+
+                })
+                heroContent.html(html);
+            },
+            init = function (data) {
+                var totalValidatData = [];
+                var curPage = 0;
+                var getValidateData = function (type) {
+                    if (!type || type == 0) {
+                        return data;
+                    }
+                    var arr = [];
+                    $.each(data, function () {
+                        // console.log(this.hero_type)
+                        if (this.hero_type == type || this.hero_type2 == type) {
+                            arr.push(this);
+                        }
+                    })
+                    return arr;
+                }
+                faceInit(getValidateData());
+
+
+                //导航事件绑定
+                $('body').on('click', '.hero-nav li', function () {
+                    var type = $(this).data('type');
+                    setall.removeClass('hero-current');
+                    $(this).addClass('hero-current');
+                    faceInit(getValidateData(type));
+                });
+
+            }
+            // 不知道这里为什么会有两个没有调用到的函数，先注释掉
+            // LoadItem = function (ItemValue) {
+            //     var html = [];
+            //     for (j = 0; j < dataList.length; j++) {
+            //         var ItemName = dataList[j].cname;
+            //         if (ItemName.indexOf(ItemValue) != "-1") {
+            //             var num = j + 1;
+            //             var imgurl = '//game.gtimg.cn/images/yxzj/img201606/heroimg/' + dataList[j].ename + '/';
+            //             html.push('<li><a href="//pvp.qq.com/web201605/herodetail/m/' + dataList[j].ename +
+            //                 '.html"><img src="' + imgurl + dataList[j].ename + '.jpg" width="91px" alt="' +
+            //                 dataList[j].cname + '"><h3>' + dataList[j].cname + '</h3></a></li>');
+            //         }
+            //     }
+            //     if (html.length == 0) {
+            //         $(".herolist").html(" ");
+            //         //$("#JErroTips").show();
+            //         return;
+            //     }
+            //     $(".herolist").html(html.join(""));
+            // },
+            // checkInput = function (inptid) {
+            //     var inpt = document.getElementById(inptid),
+            //         valu = inpt.value;
+            //     inpt.onblur = function () {
+            //         if (this.value == "") this.value = valu;
+            //     };
+            //     inpt.onfocus = function () {
+            //         if (this.value == valu) this.value = "";
+            //     }
+            // };
+    </script>
+
+
+</body></html>

@@ -1,7 +1,7 @@
 <template>
   <div class="page-hero" v-if="model">
     <div class="topbar bg-black py-2 px-3 d-flex ai-center text-white">
-      <img src="../assets/images/logo.png" alt="" height="30"/>
+      <img src="../assets/images/logo.jpg" alt="" height="30"/>
       <div class="py-1 px-3 flex-grow-1">
         <span class="mr-2">王者荣耀</span>
         <span>攻略站</span>
