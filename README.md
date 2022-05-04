@@ -40,3 +40,6 @@ Just learning
 #### web
 * web page
 ![web-demo](./imgs/web.gif)
+
+## Reference
+* open [Official website](https://pvp.qq.com/m/) with mobile phone mode in google devtool.
