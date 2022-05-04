@@ -1,9 +1,11 @@
 <template>
   <div class="page-articel" v-if="model">
-    <div class="d-flex py-3 pl-2 border-bottom">
-      <i class="iconfont icon-back text-blue"></i>
-      <strong class="flex-grow-1 text-blue">{{model.title}}</strong>
-      <div class="text-grey fs-xs">2020-12-13</div>
+    <div class="d-flex jc-between py-3 pl-2 border-bottom">
+      <div @click="$router.push('/')">
+        <i class="iconfont icon-back text-blue"></i>
+        <strong class="flex-grow-1 text-blue">{{model.title}}</strong>
+      </div>
+      <div class="text-grey fs-xs mr-2">2020-12-13</div>
     </div>
 
     <div v-html="model.body" class="px-3 fs-lg article-body"></div>
