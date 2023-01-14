@@ -32,3 +32,7 @@
 *.eap[x] filter=lfs diff=lfs merge=lfs -text
 imgs/wzryHeros_files/* filter=lfs diff=lfs merge=lfs -text
 deploy/data/journal/* filter=lfs diff=lfs merge=lfs -text
+
+# ignore
+admin.gif export-ignore
+web.gif export-ignore
