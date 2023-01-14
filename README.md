@@ -11,6 +11,11 @@
 ![alt](./imgs/structure.png)
 
 ## Technology Stack
+* Version
+    ```js
+    vue2.x
+    node: 12.22.7
+    ```
 - Server
   - nodeJs
   - MangoDB
@@ -25,11 +30,6 @@
 
 ## Guide
 * **Note**: currently, it does not provide the creating user interface. So need manually to  add first admin user.
-* Version
-    ```js
-    vue2.x
-    node: 12.22.7
-    ```
 * Deploy mongoDB in docker 
     ```sh
     # default account
