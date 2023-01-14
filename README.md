@@ -1,8 +1,31 @@
 # arena-of-valor-moba-vue
-Just learning
+## Demo
+#### admin
+* system management page
+![admin-demo](./imgs/admin.gif)
+#### web
+* web page
+![web-demo](./imgs/web.gif)
+
+## Simple Structure
+![alt](./imgs/structure.png)
+
+## Technology Stack
+- Server
+  - nodeJs
+  - MangoDB
+- Admin side
+  - vue
+  - ant-design
+- Web-portal
+  - vue
+  - original css
+- Deploy
+ - docker swarm
+
 ## Guide
 * **Note**: currently, it does not provide the creating user interface. So need manually to  add first admin user.
-* version
+* Version
     ```js
     vue2.x
     node: 12.22.7
@@ -13,12 +36,12 @@ Just learning
     username: root
     pwd: Aa123456
     ```
-* run server
+* Run server
     ```sh
     npm install
     npm run serve
     ```
-* run admin
+* Run admin side
     ```sh
     npm install
     npm run serve
@@ -27,19 +50,9 @@ Just learning
     username: admin
     pwd: 123456
     ```
-* add information in admin management system
-* run web
+* Add information in admin management system
+* Run web portal
     ```sh
     npm install
     npm run serve
     ```
-## Demo
-#### admin
-* system management page
-![admin-demo](./imgs/admin.gif)
-#### web
-* web page
-![web-demo](./imgs/web.gif)
-
-## Reference
-* open [Official website](https://pvp.qq.com/m/) with mobile phone mode in google devtool.
